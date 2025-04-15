@@ -40,7 +40,7 @@
 // const arr2 = ["elephant", ...arr, "monkey"]
 // console.log(arr2);
 
-// SPREAD OPERATOR - TOPIC
+                                                        // SPREAD OPERATOR - TOPIC
 
 // let spread=["so","much","fun"];
 // let meassage=["Javascript","is",...spread,"and","very","powerful"];
@@ -58,7 +58,7 @@
 // }
 // someFunction("hi","there","how are you");
 
-// RETURNING FUNCTION
+                                                            // RETURNING FUNCTION
 
 // let result= addTwoNumbers(4,5);
 // console.log(result);
@@ -159,10 +159,21 @@
                                                       // RECURSIVE FUNCTION
 
 // function gettRecursive(nr){
-//     console.log(nr);
+    
+//     if (nr>0){   
+//         console.log(nr);  //base condition
+//         gettRecursive(--nr);
+//     }
+// }
+// gettRecursive(3);
+
+
+// function gettRecursive(nr){
+    
 //     if (nr>0){     //base condition
 //         gettRecursive(--nr);
 //     }
+//     console.log(nr);
 // }
 // gettRecursive(3);
 
@@ -177,3 +188,42 @@
 //     console.log("Ended Function:", nr);
 // }
 // logRecursive(3);
+
+// recursion performance is slower than loop
+
+
+                                                  //NESTED FUNCTION 
+// function doOuterFunctionStuff(nr){
+//     console.log("Outer Function");
+//     doInnerFunctionStuff(nr);
+//     function doInnerFunctionStuff(x){
+//         console.log(x+7);
+//         console.log("i can acess ouiter variable:");
+//     }
+// }
+// doOuterFunctionStuff(2); 
+
+
+                                                    //  ANONYMOUS FUNCTION
+// let functionVariable=function(){
+//     console.log("not so secret though:")
+// }
+// functionVariable();                                                    
+                            
+//                                                     // function callbacks
+// function doFlexibleStuff(executeStuff){
+//     executeStuff();
+//     console.log("inside do flexible function");
+// }
+// doFlexibleStuff(functionVariable);
+
+
+// let youGotThis=function(){
+//     console.log("you are doing very well keep doing!");
+// };
+// setInterval(youGotThis,1000);
+
+// let testFunction=function(){
+//     console.log("HELLO");
+// }();
+
