@@ -163,4 +163,56 @@
 //   console.log(p.firstname);
 
 
+// inheritance-transfer properties and methods from parent class to child class     23 april 2025 
+
+// class vehicle{
+//     constructor(color,currentspeed,maxspeed){
+//         this.color=color;
+//         this.currentspeed=currentspeed;
+//         this.maxspeed=maxspeed;
+//     }
+//     move(){
+//         console.log("moving at",this.currentspeed);
+//     }
+//     accelerate(amount){
+//         this.currentspeed+=amount;
+//     }     
+// }
+// class Motorcycle extends vehicle{
+//     constructor(color,currentspeed,maxspeed,fuel){
+//         super(color,currentspeed,maxspeed);
+//         this.fuel=fuel;
+//     }
+//     doWheelie(){
+//         console.log("Driving on one wheel!");
+//     }
+
+// }
+// let motor=new Motorcycle("blue",0,150,"petrol");
+// console.log(motor.color);
+// motor.accelerate(40);
+// motor.move();
+
+
+// PROTOTYPES
+
+// class Person{
+//         constructor(firstname,lastname){
+//           this.firstname=firstname;
+//           this.lastname=lastname;
+//         }
+
+// greet(){
+//     console.log("Hi there")
+// }
+// }
+// Person.prototype.introduce=function(){
+//     console.log("Hi I'm ",this.firstname );
+
+// };
+// Person.prototype.favouriteColor="green";
+// let p=new Person("Saurabh");
+// console.log(p.favcolor);
+// p.introduce();
+
 
